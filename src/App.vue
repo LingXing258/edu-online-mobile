@@ -1,15 +1,16 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+<div>
+  <router-view></router-view>
+</div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import request from '@/utils/request'
+export default {
 }
+request({
+  method: 'get',
+  url: '/1d0f7ae1619cb1f55b283a5e5029ed2d/front/ad/getListadvert'
+})
+</script>
+<style lang="scss">
 </style>

@@ -1,0 +1,14 @@
+import request from '@/utils/request'
+export const login = data => {
+  return request({
+    method: 'post',
+    url: '/front/user/login',
+    data: new URLSearchParams(data).toString
+  })
+}
+export const getInfo = () => {
+  return request({
+    method: 'GET',
+    url: '/front/user/getInfo'
+  })
+}
